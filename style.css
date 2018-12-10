@@ -145,8 +145,8 @@ body
 }
 .contact_page
 {
-    height: 227px;
-    width: 262px;
+    height: 175px;
+    width: 252px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -201,4 +201,34 @@ body
     font-size: 18px;
     background: none;
     color: white;
+}
+
+.address_book
+{    
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    width: 99%;
+    height: 339px;
+    margin-top: 70px;
+    font-size: 52px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+th, td {
+  padding: 15px;
+}
+
+th {
+  text-align: left;
+  background-color: white;
+}
+table {
+  border-spacing: 5px;
+  background-color: #f1f1c1;
+  width:100%;
 }

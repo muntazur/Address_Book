@@ -68,16 +68,29 @@
 				echo "contact list empty! First add your contacts then try.<br>";
 			}
 			else 
-			{
+			{ ?> <h2 style = "text-align: center"><?php echo "your contacts" ?></h2>
+      <table>
+             <tr>
+                <th>Contact Id</th>
+                <th>Name</th>
+                <th>District</th> 
+                <th>E-mail</th>
+                <th>Phone </th>
+            </tr>
+        <?php
 				while($row=mysqli_fetch_row($result))
 				{
-					echo "Contact-id: ".$row[1]."<br>";
-					echo "      Name: ".$row[2]."<br>";
-					echo "  District: ".$row[3]."<br>";
-					echo "    E-mail: ".$row[4]."<br>";
-          echo "     Phone: ".$row[5]."<br>";
-					echo "<br>";
+          ?>
+            <tr>
+              <td><?php echo $row[1] ?> </td>
+              <td><?php echo $row[2] ?></td>
+              <td><?php echo $row[3] ?></td>
+              <td><?php echo $row[4] ?></td>
+              <td><?php echo $row[5] ?></td>
+            </tr>
 
+
+<?php
 				}
 			}
 
@@ -85,7 +98,7 @@
     
 
 ?>
-
+ </table>
 </body>
 
 </html>
