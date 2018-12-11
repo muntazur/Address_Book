@@ -1,3 +1,4 @@
+
 <! DOCTYPE html>
 
 <html>
@@ -43,11 +44,11 @@
 
         		<div class = "email_container">
 
-        			<input type="email" name="email" placeholder="E-mail" required>
+        			<span>E-mail: </span><input type="email" name="email" placeholder="example@gmail.com" required>
         		</div>
 
         		<div class = "password_container">
-        			<input type="password" name="password" placeholder="password" required>
+        			<span style="padding-right:24px">Password: <input type="password" name="password" placeholder="" required>
         		</div>
 
         		<div class = "submit_button">
@@ -61,4 +62,3 @@
    </body>
 
 </html>
-

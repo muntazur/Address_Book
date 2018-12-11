@@ -64,8 +64,11 @@
 		if($result)
 		{
 			if(mysqli_num_rows($result)==0)
-			{
-				echo "contact list empty! First add your contacts then try.<br>";
+			{?>
+
+				 <h2 style="text-align: center"> <?php echo "oops! empty!<br>";?> </h2>
+
+        <?php
 			}
 			else 
 			{ ?> <h2 style = "text-align: center"><?php echo "your contacts" ?></h2>

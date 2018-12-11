@@ -17,10 +17,11 @@
 
 
       //trying to match
-      $sql = "select * from users where email = '$email' and password = '$pasw'";
-        if($result=mysqli_query($connection,$sql))
+      $sql = "select * from users where email = '$email'";
+      $result=mysqli_query($connection,$sql);
+        if(mysqli_num_rows($result)!=0)
         {   
-         $row = mysqli_fetch_array($result);
+           $row = mysqli_fetch_array($result);
 
            if($row['email'] == $email && $row['password'] == $pasw)
            {
